@@ -1,0 +1,10 @@
+<h1>Bem vindo ao curso de Docker da FullCycle!</h1>
+
+<p>
+    Testando a funcionalidade de Bind Mount<br/>
+    <code>docker run -d --name nginx -p 80:80 -v /home/landucci/estudo/fullcyle/docker/volumes/:/usr/share/nginx/html nginx</code>
+</p>
+<p>
+    Agora testand com mount <br/>
+    <code>docker run -d --name nginx -p 80:80 --mount type=bind,source="$(pwd)"/estudo/fullcyle/volumes,target=/usr/share/nginx/html nginx</code>    
+</p>
